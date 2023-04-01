@@ -13,6 +13,9 @@ namespace CasaIoT
         public MainPage()
         {
             InitializeComponent();
+
+            SocketThread st = new SocketThread();
+            st.Start("hola");
         }
     }
 }
